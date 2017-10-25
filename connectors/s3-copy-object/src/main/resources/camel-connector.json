@@ -1,0 +1,24 @@
+{
+  "baseScheme": "s3-copy-object",
+  "baseGroupId": "org.apache.camel",
+  "baseArtifactId": "camel-aws",
+  "baseVersion": "2.20.0",
+  "baseJavaType" : "org.apache.camel.component.aws.s3.S3Component",
+  "name": "S3CopyObject",
+  "scheme": "s3-copy-object-connector",
+  "javaType": "io.syndesis.s3.copy.S3CopyObjectConnectorComponent",
+  "groupId" : "io.syndesis",
+  "artifactId" : "s3-copy-object-connector",
+  "version" : "0.5-SNAPSHOT",
+  "description" : "Copy Object with S3",
+  "labels" : [ "AWS"],
+  "pattern": "To",
+  "inputDataType" : "java:File",
+  "outputDataType" : "none",
+  "componentOptions" : [ "pippo" ],
+  "endpointOptions" : [ "bucketName", "accessKey", "secretKey", "operation", "deleteAfterWrite" ],
+  "endpointValues" : {
+    "operation" : "copyObject",
+    "deleteAfterWrite" : false
+  }
+}
